@@ -26,9 +26,11 @@ def load_vocab():
 def load_data(mode="train1"):
     if mode in ("train1", "eval1"):
         wav_fpaths = glob.glob(hp.timit)
+        print(wav_fpaths)
         # wav_fpaths = [w for w in wav_fpaths if 'TEST/DR1/FAKS' not in w]
         phn_fpaths = [f.replace("WAV.wav", "PHN").replace("wav", 'PHN')
                       for f in wav_fpaths]
+        print(phn_fpaths)
         if mode=="train1":
             return wav_fpaths[hp.batch_size:], phn_fpaths[hp.batch_size:]
         else:

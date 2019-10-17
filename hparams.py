@@ -7,7 +7,7 @@ https://www.github.com/kyubyong/cross_vc
 
 class Hyperparams:
     # data
-    timit = "/data/public/rw/timit/TIMIT/*/*/*/*.wav"
+    timit = "data/darpa-timit-acousticphonetic-continuous-speech/data/*/*/*/*.wav"
     arctic = "/data/public/rw/arctic/slt/*.wav"
     test_data = "50lang/*.wav"
     vocab = ['h#', 'aa', 'ae', 'ah', 'ao', 'aw', 'ax', 'ax-h', 'axr', 'ay', 'b', 'bcl',
